@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:;base64,=">
+    <link rel="stylesheet" href="{% static 'css/layout.css'%}" type="text/css">
+    <link type="image/svg+xml" href="{% static 'img/wand-sparkles-solid_1.svg' %}" rel="shortcut icon">
+    <link type="image/svg+xml" href="{% static 'img/wand-sparkles-solid_1.svg' %}" rel="icon">
+    {% block style %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <div class="nav-conteiner">
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn"><img src="{% static 'img/info-solid_1.svg' %}" height="12">   Информация</a>
+                    <div class="dropdown-content">
+                        <a href="{% url 'link_feedback' %}"><img src="{% static 'img/at-solid_1.svg' %}" height="12">   Обратная связь</a>
+                    </div>
+                  </li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <a href="{% url 'home' %}"><img src="{% static 'img/logo(4.1).jpg' %}" height="44" alt="Логотип"></a>
+        </div>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

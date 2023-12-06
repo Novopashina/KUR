@@ -1,0 +1,106 @@
+/* Сброс шрифтов по умолчанию */
+* {
+    margin: 0; 
+}
+body {
+    background-color: rgb(227, 250, 253);
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f9f9f9;
+  }
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: rgb(169, 212, 214);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    /* background-color: #f1ecec; */
+    color: rgb(218, 183, 43);
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    font-family: 'Avenir', sans-serif;
+    font-size: 17px;
+    color: rgb(203, 168, 30);
+    padding: 15px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f9f9f9}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+/* Навигационная панель */
+.nav-conteiner{
+    display:flex; 
+    /* flex-direction: row; */
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    border-bottom:0.5px solid rgb(188, 227, 229);
+}
+.nav-conteiner>nav>ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-conteiner>nav>ul>li>a{
+    display:block;
+    padding: 15px;
+    font-family: 'Avenir', sans-serif;
+    font-size: 17px;
+    color: rgb(203, 168, 30);
+}
+
+/* .logo>img{ */
+    /* mix-blend-mode: multiply; */
+    /* display: flex;
+    justify-content: center;
+    margin-right: 750px;
+    padding-top: 2px;
+    
+} */
+.logo{
+    display: flex;
+    margin-right: 700px;
+}
+
+
+
+
+
+
+

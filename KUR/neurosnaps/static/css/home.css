@@ -1,0 +1,141 @@
+/* Расположение и вид надписей */
+.conteiner {
+    /* float: left; */
+    text-align: left;
+    width: 700px;
+    margin-left: 200px;
+    margin-top: 350px;
+}
+
+.main {
+    font-family: 'Avenir', sans-serif;
+    font-size: 45px;
+    color: rgb(214, 200, 141);
+}
+/* .conteiner, p {
+    font-family: 'Avenir', sans-serif;
+    font-size: 20px;
+    color: rgb(195, 174, 91);
+} */
+.not_main {
+    font-family: 'Avenir', sans-serif;
+    font-size: 25px;
+    color: rgb(214, 200, 141);
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+/* Форма чтобы загрузить фотографию */
+.upload_photo {
+    float: right; 
+    width: 400px;
+    margin-right: 200px;
+    margin-top: 15px;
+    /* padding-top: 20px; */
+    max-width: 400px; 
+}
+.nandi{
+    background-color: rgb(207, 248, 251);
+    padding-top: 10px;
+    border: 2px solid rgb(214, 200, 141);
+    border-radius: 8px;
+}
+.nandi>p>label{
+    display: none;
+    /* font-family: 'Avenir', sans-serif;
+    color:white;
+    margin-left: 5px; */
+}
+#id_title {
+    display:none;
+    /* color: white;
+    margin-bottom: 10px; 
+    padding: 5px; 
+    border: 1px solid rgb(193, 234, 237); 
+    border-radius: 4px;  */
+}
+#id_image {
+    margin-bottom: 10px; 
+    padding: 5px; 
+    border: 1px solid white; 
+    background-color: white;
+    border-radius: 4px; 
+    align-items: center;
+}
+#id_image::file-selector-button {
+    background-color: rgb(214, 200, 141); 
+    color: white; 
+    padding: 6px 10px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+}
+#upload-form {
+    display: flex;
+    flex-direction: column;
+}
+#upload-form>p{
+    margin-bottom: 10px;
+}
+#upload-form input[id="id_image"] {
+    /* content: "Хм"; */
+    display: inline-block;
+    margin-left: 10px; 
+    color: rgb(206, 191, 129); 
+}
+#upload-form button {
+    background-color: rgb(214, 200, 141);
+    color: white; 
+    padding: 20px; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    font-size: 20px;
+    margin-top: 10px;
+}
+#upload-form>button>a{
+    color:white;
+    text-decoration: none;
+}
+#upload-form button:hover {
+    background-color: rgb(203, 188, 127); 
+}
+/* Результат загрузки фотографии */
+.result_photo{
+    background-color: white;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.result_photo>p{
+    /* text-align: center; */
+    padding-top: 60px;
+    padding-bottom: 25px;
+    font-family: 'Avenir', sans-serif;
+    font-size: 25px;
+    color: rgb(203, 168, 30);
+}
+.result_photo>img{
+    width:450px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.footer-conteiner{
+    background-color: rgb(182, 227, 230);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+footer>ul{
+    background-color: rgb(182, 227, 230);
+}
+.links>ul>li{
+    font-family: 'Avenir', sans-serif;
+    font-size: 15px;
+    color:white;
+    padding: 15px;
+}
+
